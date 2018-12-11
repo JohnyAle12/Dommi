@@ -1,17 +1,38 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Home</ion-title>
+    <ion-title>Dommi</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+	
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-grid>
+	  <ion-row>
+	  	<ion-col col></ion-col>
+	    <ion-col col>
+			<ion-chip>
+			  <ion-icon ios="logo-facebook" md="logo-facebook"></ion-icon>
+			  <ion-label>Inicia Sesión</ion-label>
+			  <button ion-button (click)="delete(chip2)">
+			    <ion-icon ios="ios-play" md="md-play"></ion-icon>
+			  </button>
+			</ion-chip>
+
+			<ion-chip>
+			  <ion-icon ios="logo-google" md="logo-google" color="danger"></ion-icon>
+			  <ion-label>Inicia Sesión</ion-label>
+			  <button ion-button color="danger" (click)="delete(chip2)">
+			    <ion-icon ios="ios-play" md="md-play"></ion-icon>
+			  </button>
+			</ion-chip>
+
+	    </ion-col>
+	    <ion-col col></ion-col>
+	  </ion-row>
+	</ion-grid>
+  </ion-toolbar>
+</ion-footer>
