@@ -6,39 +6,30 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>inicio</ion-title>
-  </ion-navbar>
-
 </ion-header>
 
 
-<ion-content padding>
-	<ion-img style="width: 100%; height: 70%;" src="../../assets/imgs/dommi2.png"></ion-img>
+<ion-content padding style="overflow: auto;">
+	<ion-img style="width: 100%; height: 70%;" src="../../assets/imgs/dommi22.png"></ion-img>
 	<p>
-    	<button ion-button icon-start *ngFor="let item of listaFacebook" (click)="iniciarSesion(item.pagina)" full>
+    	<button ion-button icon-start *ngFor="let item of listaFacebook" (click)="iniciarSesion(item.pagina)" full round>
     		<ion-icon ios="logo-facebook" name="logo-facebook"></ion-icon>
-    		Iniciar Sesión
+    		Ingresar con Facebook
     	</button>
   	</p>
   	<p>
-    	<button ion-button icon-start color="danger" *ngFor="let item of listaGoogle" (click)="iniciarSesion(item.pagina)" full>
+    	<button ion-button icon-start color="danger" *ngFor="let item of listaGoogle" (click)="iniciarSesion(item.pagina)" full round>
     		<ion-icon ios="logo-google" name="logo-google"></ion-icon>
-    		Iniciar Sesión
+    		Ingresar con Google
     	</button>
   	</p>
   	<p>
-    	<button ion-button icon-start color="secondary" *ngFor="let item of listaGoogle" (click)="iniciarSesion(item.pagina)" full>
-    		<ion-icon ios="ios-book" md="md-book"></ion-icon>
-    		Registrate
+    	<button ion-button icon-start color="secondary" *ngFor="let item of registro" (click)="iniciarSesion(item.pagina)" full round>
+    		<ion-icon ios="ios-mail" md="md-mail"></ion-icon>
+    		Ingresar con tu E-mail
     	</button>
   	</p>
 
 </ion-content>
 
-<ion-footer>
-  <ion-toolbar>
-
-  </ion-toolbar>
-</ion-footer>
 

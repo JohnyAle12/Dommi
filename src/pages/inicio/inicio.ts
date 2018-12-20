@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { TabsPage } from '../tabs/tabs';
+import { RegistrarsePage } from '../registrarse/registrarse';
 
 /**
  * Generated class for the InicioPage page.
@@ -18,6 +19,7 @@ export class InicioPage {
 
   listaFacebook:any;
   listaGoogle:any;
+  registro:any;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   	this.listaFacebook=[
   		{
@@ -31,6 +33,12 @@ export class InicioPage {
   			pagina:TabsPage
   		}
   	];
+    this.registro=[
+      {
+        nombre:"Registrarse",
+        pagina:RegistrarsePage
+      }
+    ];
   }
 
   ionViewDidLoad() {

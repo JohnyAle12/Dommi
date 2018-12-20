@@ -38,7 +38,8 @@ $colors: (
   secondary:  #32db64,
   danger:     #f53d3d,
   light:      #f4f4f4,
-  dark:       #222
+  dark:       #222,
+  test:       #a8a8a8
 );
 
 
@@ -53,7 +54,11 @@ $colors: (
 // --------------------------------------------------
 // Material Design only Sass variables can go here
 
+.tituloDommi{
+  color: #70ad47;
+  font-family: forte !important;
 
+}
 
 
 // App Windows Variables

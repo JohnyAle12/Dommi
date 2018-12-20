@@ -1,3 +1,24 @@
 page-home {
 
+	#nombreUsuario{
+		$toolbar-md-title-font-size: 1.5rem;
+		$toolbar-ios-title-font-size: 1.5rem;
+		font-weight: bold;
+	}
+
+	.botonGaleria{
+		width: 6rem; 
+		height: 6rem
+	}
+	
+	#tituloPrincipal{
+		font-weight: bold;
+	}
+
+	.botonSerivioP{
+		width:48%; 
+		height:8rem;
+		border-radius: 1rem;
+	}
+
 }

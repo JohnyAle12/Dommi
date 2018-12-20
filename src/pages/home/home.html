@@ -1,11 +1,94 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Dommi</ion-title>
+	    <button ion-button menuToggle>
+		  	<ion-icon ios="ios-menu" md="md-menu"></ion-icon>
+		  </button> 
+	    <ion-title class="tituloDommi">Dommi.Co</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
 	
+	<ion-menu [content]="content" style="">
+	  <ion-header>
+	    <ion-toolbar>
+				<button ion-button icon-only menuToggle>
+						<ion-icon ios="ios-contact" md="md-contact"></ion-icon>
+				</button>
+				<ion-title id="nombreUsuario" text-capitalize>Johny Alejandro Prieto Velasquez</ion-title>
+				<!--<p id="nombreUsuario">Johny Alejandro Prieto Velasquez</p>-->
+			</ion-toolbar>
+	  </ion-header>
+	  <ion-content>
+	    <ion-list>
+	      <button ion-item *ngFor="let item of menuPrincipal" (click)="openPage(item.pagina)">
+	        {{item.titulo}}
+	      </button>
+	    </ion-list>
+	  </ion-content>
+	</ion-menu>
+	<ion-nav id="nav" #content></ion-nav>
+	
+	<ion-buttons start>
+		<button color="test" ion-button class="botonSerivioP"></button>
+		<button color="test" ion-button class="botonSerivioP"></button>
+		<button color="test" ion-button class="botonSerivioP"></button>
+		<button color="test" ion-button class="botonSerivioP"></button>
+	</ion-buttons>
+
+	<ion-slides pager style="height: 20rem">
+			<ion-slide>
+				<ion-buttons>
+					<button (click)="openPage(rootPage)" color="test" ion-button icon-only class="botonGaleria" round>
+					</button>
+					<button color="test" ion-button icon-only class="botonGaleria" round>
+					</button>
+					<button color="test" ion-button icon-only class="botonGaleria" round>
+					</button>
+					<button color="test" ion-button icon-only class="botonGaleria" round>
+					</button>
+					<button color="test" ion-button icon-only class="botonGaleria" round>
+					</button>
+					<button color="test" ion-button icon-only class="botonGaleria" round>
+					</button>
+					<button color="test" ion-button icon-only class="botonGaleria" round>
+					</button>
+					<button color="test" ion-button icon-only class="botonGaleria" round>
+					</button>
+				</ion-buttons>
+			</ion-slide>
+			<ion-slide>
+				<ion-buttons>
+					<button color="test" ion-button icon-only class="botonGaleria" round>
+					</button>
+					<button color="test" ion-button icon-only class="botonGaleria" round>
+					</button>
+					<button color="test" ion-button icon-only class="botonGaleria" round>
+					</button>
+					<button color="test" ion-button icon-only class="botonGaleria" round>
+					</button>
+					<button color="test" ion-button icon-only class="botonGaleria" round>
+					</button>
+					<button color="test" ion-button icon-only class="botonGaleria" round>
+					</button>
+					<button color="test" ion-button icon-only class="botonGaleria" round>
+					</button>
+					<button color="test" ion-button icon-only class="botonGaleria" round>
+					</button>
+				</ion-buttons>
+			</ion-slide>
+		
+		</ion-slides>
+		<h4 id="tituloPrincipal">Promociones</h4>
+		<ion-slides pager style="height: 15rem">
+			<ion-slide style="background-color: #a8a8a8">
+				<h5>Slide 1</h5>
+			</ion-slide>
+			<ion-slide>
+				<h5>Slide 2</h5>
+			</ion-slide>
+		
+		</ion-slides>
 </ion-content>
 	
 
