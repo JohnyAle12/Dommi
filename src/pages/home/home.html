@@ -9,25 +9,7 @@
 
 <ion-content padding>
 	
-	<ion-menu [content]="content" style="">
-	  <ion-header>
-	    <ion-toolbar>
-				<button ion-button icon-only menuToggle>
-						<ion-icon ios="ios-contact" md="md-contact"></ion-icon>
-				</button>
-				<ion-title id="nombreUsuario" text-capitalize>Johny Alejandro Prieto Velasquez</ion-title>
-				<!--<p id="nombreUsuario">Johny Alejandro Prieto Velasquez</p>-->
-			</ion-toolbar>
-	  </ion-header>
-	  <ion-content>
-	    <ion-list>
-	      <button ion-item *ngFor="let item of menuPrincipal" (click)="openPage(item.pagina)">
-	        {{item.titulo}}
-	      </button>
-	    </ion-list>
-	  </ion-content>
-	</ion-menu>
-	<ion-nav id="nav" #content></ion-nav>
+	
 	
 	<ion-buttons start>
 		<button color="test" ion-button class="botonSerivioP"></button>

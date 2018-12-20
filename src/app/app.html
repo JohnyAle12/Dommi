@@ -1,1 +1,21 @@
+<ion-menu [content]="contentMenu" type="overlay">
+  <ion-header>
+    <ion-toolbar>
+			<button ion-button icon-only menuToggle>
+					<ion-icon ios="ios-contact" md="md-contact"></ion-icon>
+			</button>
+			<!--<ion-title id="nombreUsuario" text-capitalize>Johny Alejandro Prieto Velasquez</ion-title>-->
+			<p id="nombreUsuario" text-capitalize>Johny Alejandro Prieto Velasquez</p>
+		</ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <button ion-item *ngFor="let item of menuPrincipal" (click)="openPage(item.pagina)">
+        {{item.titulo}}
+      </button>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+<ion-nav id="nav" #contentMenu></ion-nav>
+
 <ion-nav [root]="rootPage"></ion-nav>
